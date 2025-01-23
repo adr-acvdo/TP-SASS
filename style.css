@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+/* MENU DE NAVEGACION */
+.navbar ul  {display: flex;flex-direction: row;gap: 20px;}
+
+.navbar ul li {list-style: none;}
+
+.navbar ul li a {color: rgb(0, 0, 0);text-decoration: none;font-size: 20px;justify-content: space-around;}
+
+a:hover{background-color: rgb(249, 232, 6);}
+
+
+
+
+
+.logo-principal{display: flex;flex-direction: row;justify-content: center;background-color: black; }
+
+.titulo{background-color: black;text-align: center;}
+
+.titulo h1 {color: aliceblue;padding: 100px;font-size: 50px;
+     font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: normal;}
+
+
+p{color: rgb(14, 14, 14);}
+
+footer{height: 200px;text-align: center;background-color: black;}
+
+footer h3 {color: aliceblue;font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: normal;}
+
+footer p {color: aliceblue;text-decoration:overline}
+
+.footer{display: flex;flex-direction: row;justify-content:space-between;margin-right: 10px;}
+
+.footer li a {color: rgb(246, 236, 236);text-decoration: none;}
+
+
+
+li {list-style: none;}
+
+
+/* ESTILOS APARTADO NOSOTROS */
+
+.nosotros{display: flex;flex-direction: column;
+    background-color: rgb(27, 32, 30);margin: 10px;text-align: center;}
+
+.nosotros h2{color: aliceblue;font-size:80px;font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: normal;}
+.nosotros p {color: aliceblue;font-size: 30px;margin: 5px;}    
+.nosotros img {width: 500px;margin: auto;}
+
+
+
+/* galeria stilos */
+
+.flex-container-galeria{background-color: rgb(241, 10, 10);display: flex;flex-direction: column;}
+
+.flex-container-galeria img {height: 400px;width: 400px;object-fit: cover;}
