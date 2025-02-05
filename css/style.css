@@ -290,4 +290,36 @@ button:hover {
   }
 }
 
+/* FORMULARIO ESTILOS */
+
+.formulario {
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  height: 400px;
+  flex-direction: column;
+  width: 400px;
+}
+
+.formulario form {
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.formulario button {
+  background-color: black;
+  padding: 5px;
+  color: aliceblue;
+  width: 100px;
+  margin: auto;
+}
+
+.formulario input,
+textarea {
+  border-radius: 5px 5px;
+  color: beige;
+}
+
+
 /*# sourceMappingURL=style.css.map */
