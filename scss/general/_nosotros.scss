@@ -1,0 +1,23 @@
+/* NOSOTROS */
+.nosotros {
+  @include flex(column, center);
+  background-color: rgb(27, 32, 30);
+  margin: 10px;
+  text-align: center;
+
+  h2 {
+    color: $secondary-color;
+    font-size: 80px;
+  }
+
+  p {
+    color: $secondary-color;
+    font-size: 30px;
+    margin: 5px;
+  }
+
+  img {
+    width: 500px;
+    margin: auto;
+  }
+}

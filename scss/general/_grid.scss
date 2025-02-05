@@ -1,0 +1,71 @@
+// Estilos del grid
+.grid-container {
+  display: grid;
+  background-color: $color-fondo;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 20px;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+
+    &.section-uno {
+      background-color: $color-primario;
+    }
+
+    &.section-dos {
+      background-color: $color-secundario;
+    }
+
+    &.section-tres {
+      background-color: $color-terciario;
+      grid-column: span 2;
+    }
+  }
+
+  h2 {
+    font-size: 35px;
+    font-family: $fuente-titulo;
+  }
+
+  p {
+    font-size: 20px;
+    font-family: $fuente-texto;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: lighten($color-fondo, 10%);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  img {
+    max-height: 300px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  button {
+    color: white;
+    background-color: $color-texto;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $color-hover;
+      color: $color-texto;
+    }
+  }
+}

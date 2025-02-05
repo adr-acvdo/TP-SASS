@@ -1,0 +1,9 @@
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .section-content-uno,
+  .section-content-dos,
+  .flex-container-galeria,
+  .flex-container-galeria-dos {
+    flex-direction: column;
+  }
+}

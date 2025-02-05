@@ -1,0 +1,29 @@
+.flex-container-galeria,
+.flex-container-galeria-dos {
+  @include flex(row);
+  height: auto;
+  width: 90%;
+  margin: auto;
+  overflow: hidden; // Evita que la imagen crecida se desborde
+
+  img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; // Suaviza el efecto de escala
+    transform-origin: center; // Asegura que la imagen crezca desde el centro
+  }
+
+  img:hover {
+    transform: scale(1.1); // Aumenta el tamaño un 10% al pasar el cursor
+  }
+}
+
+.flex-container-galeria-dos {
+  background-color: #0e96d0;
+  height: 400px;
+
+  img {
+    padding: 10px;
+  }
+}
