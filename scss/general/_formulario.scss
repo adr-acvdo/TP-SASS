@@ -1,26 +1,63 @@
-/* FORMULARIO */
+/* FORMULARIO ESTILOS */
+
 .formulario {
-  @include flex(column, center);
+  display: flex;
   padding: 10px;
   margin: 5px;
   height: 400px;
+  flex-direction: column;
   width: 400px;
 
   form {
     font-size: 20px;
     text-align: center;
+    font-family: sans-serif;
   }
 
   button {
-    background-color: $primary-color;
+    background-color: black;
     padding: 5px;
+    color: aliceblue;
     width: 100px;
     margin: auto;
   }
 
   input,
   textarea {
-    border-radius: 5px;
+    border-radius: 5px 5px;
     color: beige;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(170, 169, 162);
+  margin: 10px;
+
+  .redes {
+    margin: 5px;
+    height: 400px;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+
+    h3 {
+      font-size: 40px;
+      font-family: "Lato", serif;
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(13, 14, 15);
+    }
+
+    li {
+      list-style: none;
+      padding: 10px;
+    }
   }
 }
