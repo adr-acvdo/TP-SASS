@@ -1,7 +1,8 @@
-// Estilos del grid
+/* GRID CONTAINER ESTILOS */
+
 .grid-container {
   display: grid;
-  background-color: $color-fondo;
+  background-color: aliceblue;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 10px;
@@ -15,30 +16,30 @@
     border-radius: 10px;
 
     &.section-uno {
-      background-color: $color-primario;
+      background-color: aquamarine;
     }
 
     &.section-dos {
-      background-color: $color-secundario;
+      background-color: #1795e9;
     }
 
     &.section-tres {
-      background-color: $color-terciario;
+      background-color: #ffdb10;
       grid-column: span 2;
     }
   }
 
   h2 {
     font-size: 35px;
-    font-family: $fuente-titulo;
+    font-family: "Saira Stencil One", serif;
   }
 
   p {
     font-size: 20px;
-    font-family: $fuente-texto;
+    font-family: "Pridi", serif;
     font-style: italic;
     text-decoration: underline;
-    background-color: lighten($color-fondo, 10%);
+    background-color: white;
     padding: 10px;
     border-radius: 5px;
   }
@@ -55,7 +56,7 @@
 
   button {
     color: white;
-    background-color: $color-texto;
+    background-color: black;
     padding: 10px;
     width: 200px;
     margin: auto;
@@ -64,8 +65,9 @@
     transition: background-color 0.3s ease-in-out;
 
     &:hover {
-      background-color: $color-hover;
-      color: $color-texto;
+      background-color: yellow;
+      color: black;
     }
   }
 }
+
